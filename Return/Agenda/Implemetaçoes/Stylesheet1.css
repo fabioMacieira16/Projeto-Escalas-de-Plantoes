@@ -1,0 +1,60 @@
+﻿body
+{
+    $ conserta os campos telefone(configurar as mascaras) 
+    $ limitar o usuario so usar 255 caracters para o nome
+    $ limitar o usuario so usar 255 caracters para o nome
+    $ limitar o usuario so usar 255 caracters para o nome da presa
+    $ informa a data do cadastro
+    $ Lista a datadoAgendamento na grid
+    $ Listar os dados na grid
+    $ editar
+    $ excluir
+    $ cadastro de analista
+    $ consertar o evento Click no campo(nome do analista) nao esta preechedo automaticamente no comboBox ao clicar
+    
+        //Ordenar
+        $ Ordenar todos na grid
+        $ Ordenar por Retorno ativo
+        $ Ordenar por Retorno Inativo
+
+        //Consulta
+        $ filtrar por contato
+        $ filtrar por Empresa
+        $ filtrar por analista
+        filtrar por Data Da Ligacao --> encontra uma maneira de filtra por data
+----------------------------------------------------------------------------------
+    //Escala de plantao
+        $ nome do analista
+          $ dias trabalhado
+               $ valor do dia trabalahado
+             --> total de dias trabalhado
+             --> total de valor acumulado no mes
+                $ dia da folga
+                $ Observacao
+----------------------------------------------------------------------------------       
+
+        Controle de combustivel
+        nome do analista
+            Nome da Empresa
+                    data da visita
+                            valor cobrado
+                                    Kilometragem
+                                    valor total no mês
+                                    calculo da kilometragem                    
+                                    observacao
+----------------------------------------------------------------------------------
+        Consertos
+         (Tela Principal)informar a quantidade de agendamentos nao tela
+              id = 40
+              nomeDoAnalista = 150
+              NomeDaEmpresa = 150
+        observacao 400              
+          
+        Limitar o tamanha dos compos dentro do banco de dados e na aplicação.
+            txtvalos para receber numeros
+            txtkm para receber so numeros
+            Organizar tamanhos do campos na Grid
+            Calcular os valores da Quiometragem
+            calcular os valores dos dias trabalhados
+            Lista as Folgas na grid
+}

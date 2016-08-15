@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{158501E3-7DAB-490B-983E-CCFF716FB03C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agenda</RootNamespace>
+    <AssemblyName>Agenda</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Controle.cs" />
+    <Compile Include="Controller\ControleAnalista.cs" />
+    <Compile Include="Controller\ControleFolgas.cs" />
+    <Compile Include="Controller\ControleKm.cs" />
+    <Compile Include="Controller\ControlePlantao.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroAnalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAnalista.Designer.cs">
+      <DependentUpon>frmCadastroAnalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoAgendamento.Designer.cs">
+      <DependentUpon>frmNovoAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoCadCombustivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoCadCombustivel.Designer.cs">
+      <DependentUpon>frmNovoCadCombustivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoCadFolgas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoCadFolgas.Designer.cs">
+      <DependentUpon>frmNovoCadFolgas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoCadPlantao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoCadPlantao.Designer.cs">
+      <DependentUpon>frmNovoCadPlantao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frnEditarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnEditarAgendamento.Designer.cs">
+      <DependentUpon>frnEditarAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Cadastro.cs" />
+    <Compile Include="Model\CadastroAnalistas.cs" />
+    <Compile Include="Model\CadastroFolgas.cs" />
+    <Compile Include="Model\CadastroKm.cs" />
+    <Compile Include="Model\CadastroPlantao.cs" />
+    <Compile Include="Model\Conexao.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroAnalista.resx">
+      <DependentUpon>frmCadastroAnalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoAgendamento.resx">
+      <DependentUpon>frmNovoAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoCadCombustivel.resx">
+      <DependentUpon>frmNovoCadCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoCadFolgas.resx">
+      <DependentUpon>frmNovoCadFolgas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoCadPlantao.resx">
+      <DependentUpon>frmNovoCadPlantao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnEditarAgendamento.resx">
+      <DependentUpon>frnEditarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Agenda.Model.Cadastro.datasource" />
+    <None Include="Properties\DataSources\Agenda.Model.CadastroAnalistas.datasource" />
+    <None Include="Properties\DataSources\Agenda.Model.CadastroKm.datasource" />
+    <None Include="Properties\DataSources\Agenda.Model.CadastroPlantao.datasource" />
+    <None Include="Properties\DataSources\frmCadastroCliente.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Implemetaçoes\Stylesheet1.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
